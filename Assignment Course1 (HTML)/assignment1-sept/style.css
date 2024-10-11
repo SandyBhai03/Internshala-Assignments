@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-weight: 500;
+    color: #2e2d2d;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100%;
+    width: 100%;
+    background-color: white;
+    padding: 30px 8vw; /* Adjust padding using viewport width */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header {
+    height: auto; /* Set to auto for responsive height */
+    width: 100%;
+    border: 2px solid black;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 2rem; /* Use rem units for scalable font size */
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+header .links {
+    padding: 25px 39px;
+}
+
+.blog-post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blog {
+    min-height: 400px; /* Reduced min-height for small screens */
+    width: 100%;
+    border: 2px solid black;
+    padding: 25px;
+}
+
+.blog .content-section {
+    padding: 5px 18px;
+}
+
+.blog .content-section p {
+    margin-top: 12px;
+}
+
+.blog .content-section img {
+    height: auto;
+    max-width: 100%; /* Ensure images are responsive */
+    margin: 19px 5px;
+}
+
+.blog .content-section li {
+    margin-left: 2.5rem; /* Adjusted using rem for consistency */
+}
+
+.blog .content-section li span {
+    color: rgb(210, 3, 3);
+}
+
+.blog .content-section video {
+    width: 100%; /* Make video responsive */
+    max-width: 450px;
+    margin: 20px 5px;
+}
+
+.blog .content-section h4, p {
+    margin-left: 22px;
+}
+
+#blog2 img {
+    height: auto;
+    width: 339px;
+    max-width: 400px;
+    transform: rotate(90deg);
+    margin: -30px 0;
+    margin-left: 80px;
+}
+
+#my-details p {
+    margin: 12px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 13px;
+}
+
+.contact-form .info {
+    display: flex;
+    /* flex-direction: column; Adjust layout on small screens */
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.contact-form .info label {
+    width: 7vw; /* Allow label to adjust */
+}
+
+.contact-form .info input {
+    padding: 2px 6px;
+    width: 20vw; /* Make input responsive */
+}
+
+.contact-form .info textarea {
+    width: 20vw; /* Make textarea responsive */
+    padding: 2px 6px;
+}
+
+.contact-form button {
+    width: 20vw; /* Make button responsive */
+    padding: 3px 7px;
+}
+
+footer hr {
+    margin-bottom: 30px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+/* Responsive Breakpoints */
+
+/* Medium devices (tablets, 768px and above) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 20px 5vw; /* Adjust container padding */
+    }
+    header h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+    header p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 900px){
+    .contact-form .info input{
+        width: 50vw;
+    }
+    .contact-form .info textarea{
+        width: 50vw;
+    }
+    #blog2 img{
+        width: 300px;
+    }
+}
+/* Small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px 4vw; /* Reduce padding on small screens */
+    }
+    header {
+        padding: 15px; /* Reduce header padding */
+    }
+    header h1 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+    header p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+    .blog .content-section video {
+        max-width: 100%; /* Ensure videos fit on small screens */
+    }
+    #blog2 img{
+        width: 170px;
+        margin-left: 43px;
+        place-items: center;
+    }
+    .contact-form .info input{
+        width: 100%;
+    }
+    .contact-form .info textarea{
+        width: 100%;
+    }
+    .contact-form .info {
+        flex-direction: column; /* Stack labels and inputs on small screens */
+    }
+    .contact-form button {
+        width: 100%;
+    }
+}
