@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=60&id=N7aSIT2o3M6q&format=png"
+      type="image/x-icon"
+    />
+    <title>Student Registration App</title>
+  </head>
+  <body class="overflow-x-hidden w-screen min-h-screen">
+    <div
+      class="min-h-screen w-full bg-gradient-to-bl from-pink-500 to-amber-400 py-3 px-5"
+    >
+      <div class="text-center w-fit px-5 py-2 rounded mx-auto">
+        <h1
+          class="font-poppins text-3xl font-bold bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent inline-block bg-clip-text"
+        >
+          Student Registration System
+        </h1>
+        <hr class="w-full h-2 my-1" />
+      </div>
+      <!-- form and resistered Students details table container -->
+      <div
+        class="min-h-fit w-full flex flex-col items-center justify-center 2xl:flex-row 2xl:items-start gap-5 mt-5"
+      >
+        <!-- ---------- Student Details form start Here---------------------- -->
+        <div
+          class="detail-form-container w-[400px] bg-[rgba(244,244,244,.3)] text-white h-fit py-4 px-7 rounded border-[1.8px] border-[[rgba(244,244,244,.4)]] flex flex-col justify-center items-center shadow-md shadow-amber-400"
+        >
+          <h2
+            class="text-xl font-poppins font-semibold my-2 text-center bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent inline-block bg-clip-text"
+          >
+            Enter Student Details
+          </h2>
+          <hr class="h-[2px] bg-red-500 w-1/2 mb-2">
+          <form action="" class="w-full">
+            <div
+              class="w-full flex justify-start flex-col gap-1 items-start mb-2"
+            >
+              <label for="sname" class="text-lg font-medium">
+                Student Name :
+              </label>
+              <input
+                class="w-full text-lg font-medium px-2 outline-none rounded border-[2px] border-[rgba(244,244,244,.4)] focus:border-pink-400 bg-[rgba(244,244,244,.2)] transition-all duration-400"
+                type="text"
+                id="sname"
+              />
+            </div>
+            <div
+              class="w-full flex justify-start flex-col gap-1 items-start mb-2"
+            >
+              <label for="sid" class="text-lg font-medium">
+                Student Id :
+              </label>
+              <input
+                class="w-full text-lg font-medium px-2 outline-none rounded border-[2px] border-[rgba(244,244,244,.4)] focus:border-pink-400 bg-[rgba(244,244,244,.2)] transition-all duration-400"
+                type="text"
+                id="sid"
+              />
+            </div>
+            <div
+              class="w-full flex justify-start flex-col gap-1 items-start mb-2"
+            >
+              <label for="semail" class="text-lg font-medium"> Email : </label>
+              <input
+                class="w-full text-lg font-medium px-2 outline-none rounded border-[2px] border-[rgba(244,244,244,.4)] focus:border-pink-400 bg-[rgba(244,244,244,.2)] transition-all duration-400"
+                type="email"
+                id="semail"
+              />
+            </div>
+            <div
+              class="w-full flex justify-start flex-col gap-1 items-start mb-2"
+            >
+              <label for="scontact" class="text-lg font-medium">
+                Contact No :
+              </label>
+              <input
+                class="w-full text-lg font-medium px-2 outline-none rounded border-[2px] border-[rgba(244,244,244,.4)] focus:border-pink-400 bg-[rgba(244,244,244,.2)] transition-all duration-400"
+                type="text"
+                id="scontact"
+              />
+            </div>
+            <div
+              class="w-full flex justify-start flex-col gap-1 items-start mb-2"
+            >
+              <label for="course" class="text-lg font-medium">
+                Course Name :
+              </label>
+              <input
+                class="w-full text-lg font-medium px-2 outline-none rounded border-[2px] border-[rgba(244,244,244,.4)] focus:border-pink-400 bg-[rgba(244,244,244,.2)] transition-all duration-400"
+                type="text"
+                id="scourse"
+              />
+            </div>
+            <div 
+              class="btn w-fit rounded font-bold px-3 py-1 mx-auto cursor-pointer mt-4 border-[2px] border-pink-400 hover:bg-transparent hover:text-[rgba(244,244,244)] hover:border-[rgba(244,244,244,.9)] text-center bg-[rgba(244,244,244,.6)] transition-all duration-500"
+              id="submit-btn"
+            >
+              <span
+                class="w-full h-full bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent inline-block bg-clip-text transition-all duration-500 hover:text-[rgba(244,244,244)]"
+                >Add Details</span
+              >
+            </div>
+          </form>
+        </div>
+        <!-- ---------- Student Details End start Here------------>
+
+
+        <!-- Registered Students Table container start here -->
+        <div
+          class="resgister-students-table-container w-[1100px] h-[489px] bg-[rgba(244,244,244,.4)] border-[2px] border-[rgba(244,244,244,.6)] flex flex-col rounded px-3 py-3"
+        >
+        <!-- Table headings div -->
+          <div
+            class="headings grid grid-cols-[130px_90px_230px_100px_240px_70px_100px] grid-rows-1 gap-3 bg-gradient-to-r from-pink-600 via-red-600 to-green-600 rounded text-lg font-semibold text-[rgba(244,244,244,.8)] border-[2px] border-[rgba(244,244,244,.8)] px-5 py-2 mb-2"
+          >
+            <span>Name</span>
+            <span>Id</span>
+            <span class="">Email</span>
+            <span>Contact</span>
+            <span class="ml-2">Course</span>
+            <button class="w-fit ml-3">Edit</button>
+            <button class="w-fit ml-2">Delete</button>
+          </div>
+          
+          <!-- Resistered Students Start Table -->
+          <div id="resgister-students-table"
+          class="resgister-students-table h-[400px] overflow-y-scroll overflow-x-hidden pr-2">
+            <!-- single student details container div start
+          <div
+            id="student-details"
+            class="student-details font-medium grid grid-cols-[130px_50px_230px_100px_240px_70px_70px] grid-rows-1 gap-5 border-[1.5px] bg-[rgba(244,244,244,.3)] border-[rgba(244,244,244,.7)] px-5 py-2 rounded"
+          >
+            <span id="student-name"
+              class="bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent bg-clip-text"
+            >
+              Sandeep Yadav
+            </span>
+            <span id="student-id"
+              class="bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent bg-clip-text"
+            >
+              001
+            </span>
+            <span id="student-email"
+              class="bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent bg-clip-text"
+              >kingsamrat9453@gmail.com</span
+            >
+            <span id="student-contact"
+              class="bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent bg-clip-text"
+            >
+              9068693488
+            </span>
+            <span id="student-course"
+              class="bg-gradient-to-r from-pink-600 via-red-600 to-green-600 text-transparent bg-clip-text"
+            >
+              Full Stack Development
+            </span>
+            <button id="edit-btn"
+            class="edit-btn w-fit px-3">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <button id="delete-btn"
+            class="delete-btn w-fit px-5">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+           <!-- single student details container div end -->
+          </div>
+          <!-- Resistered Students End Table -->
+        
+        </div> 
+        <!-- Registered Students Table container end here -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
