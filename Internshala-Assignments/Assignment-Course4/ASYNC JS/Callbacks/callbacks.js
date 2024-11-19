@@ -1,4 +1,6 @@
+// Task 1 creted callbacks.html file
 
+// --------------------------------------------------------------
 
 // Task 2
 // const fetchDataBtn = document.querySelector("#fetchDataBtn");
