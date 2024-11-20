@@ -30,6 +30,7 @@ const output = document.getElementById('output');
 
       fetchData
         .then(posts => {
+          console.log(posts)
           const postList = posts.map(post => `<li>${post.title}</li>`).join("");
           output.innerHTML = `<ul>${postList}</ul>`;
         })
