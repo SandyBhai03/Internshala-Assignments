@@ -12,7 +12,7 @@
 // Space Complexity: O(1)
 
 // var kidsWithCandies = function(candies, extraCandies) {
-//     const max = candies.reduce((a,b) => Math.max(a,b), -Infinity); // find Max value
+//     const max = candies.reduce((a,b) => Math.max(a,b),  -Infinity); // find Max value
 
 //     // This Solution👇 time and Space = O(n) & O(1)
 //     for (let i = 0; i < candies.length; i++) {
@@ -168,18 +168,24 @@
 // Time complexity- O(n)
 // Space Complexity- O(n)
 
-var shuffle = function(nums, n) {
-    const newArr = [];
-    for(let i=0; i<n; i++){
-        newArr.push(nums[i], nums[i+n])
-    }
-    return newArr;
-};
+// var shuffle = function(nums, n) {
+//     const newArr = [];
+//     for(let i=0; i<n; i++){
+//         newArr.push(nums[i], nums[i+n])
+//     }
+//     return newArr;
+// };
 
-const arr = [2,5,1,3,4,7], n = 3;
+// const arr = [2,5,1,3,4,7], n = 3;
 
-const ans = shuffle(arr, n);
-console.log(ans);
+// const ans = shuffle(arr, n);
+// console.log(ans);
+
+
+
+
+
+
 
 
 
