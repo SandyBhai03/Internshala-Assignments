@@ -227,7 +227,7 @@
 // Time Complexity- O(n)
 // Space Complexity- O(1)// because not use any space
 
-// ~~~~~~~~~~~~~~Optimized Solution ~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~ Optimized Solution ~~~~~~~~~~~~~~~~~
 // var sortColors = function(nums) {
 //     let len = nums.length;
 //     let i=0, start=0, end = len-1;
@@ -251,7 +251,7 @@
 // const arr = [2,0,2,1,1,0]
 // console.log(sortColors(arr))
 
-// ~~~~~~~~~~~~~~~~~~~~~~Brute Force Approach~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~ Brute Force Approach ~~~~~~~~~~~~~~~~~~~~~~~~~
 // function sortColors(nums) { // O(n) & O(1)
 //     let count0 = 0, count1 = 0, count2 = 0;
 
