@@ -94,7 +94,7 @@ console.log(removeDuplicates("abbaca")); // "ca"
 console.log(removeDuplicates("azxxzy")); // "ay"
 
 
-// -----------------------------------------------------------
+// ----------------------------------------------------------------
 // Q-4 . Given n non-negative integers representing an elevation map where the width of each
 // bar is 1, compute how much water it can trap after raining.Leetcode problem no 42. Trapping Rain Water (20 marks)
 // Question was - https://leetcode.com/problems/trapping-rain-water/description/
