@@ -28,7 +28,7 @@ This is a simple To-Do List application built using React.js and Tailwind CSS. I
 
 ## 📂 Folder Structure
 
-`sh`
+```sh
 📦 todo-app
 ┣ 📂 src
 ┃ ┣ 📂 assets (icons/images)
@@ -42,34 +42,34 @@ This is a simple To-Do List application built using React.js and Tailwind CSS. I
 ┣ 📄 package.json
 ┣ 📄 tailwind.config.js
 ┗ 📄 README.md
-`sh`
+```
 
 ## 🚀 Installation & Setup
 
 1.  Clone the repository
 
-`sh`
+```sh
 git clone https://github.com/yourusername/todo-app.git
 cd todo-app
-`sh`
+```
 
 2. Install dependencies
 
-`sh`
+```sh
 npm install
-`sh`
+```
 
 3. Start the development server
 
-`sh`
+```sh
 npm run dev
-`sh`
+```
 
 4. Open in browser
 
-`sh`
+```sh
 http://localhost:5173
-`sh`
+```
 
 ## 📌 Usage Guide
 
